@@ -12,303 +12,307 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4340417c92784114a8225f4bab72b03a, type: 3}
   m_Name: Trivia Questions
   m_EditorClassIdentifier: 
-  _questionCSV: {fileID: 4900000, guid: f9a9e8b2ecaeccc42ac6463c7bbb2895, type: 3}
+  _questionCSVEnglish: {fileID: 4900000, guid: f9a9e8b2ecaeccc42ac6463c7bbb2895, type: 3}
+  _questionCSVSpanish: {fileID: 4900000, guid: 4f934207772b23a4282c608742f7e824, type: 3}
   _questions:
-  - question: What is the capital of France?
-    correctAnswer: Paris
+  - question: "\uFFFDCu\uFFFDl es la capital de Francia?"
+    correctAnswer: "Par\uFFFDs"
     decoyAnswers:
-    - Berlin
-    - Rome
+    - "Berl\uFFFDn"
+    - Roma
     - Madrid
-  - question: In which year did World War II end?
+  - question: "\uFFFDEn qu\uFFFD a\uFFFDo termin\uFFFD la Segunda Guerra Mundial?"
     correctAnswer: 1945
     decoyAnswers:
     - 1943
     - 1947
     - 1950
-  - question: Who wrote the play "Romeo and Juliet"?
+  - question: "\uFFFDQui\uFFFDn escribi\uFFFD la obra Romeo y Julieta?"
     correctAnswer: William Shakespeare
     decoyAnswers:
     - Charles Dickens
     - Jane Austen
     - Mark Twain
-  - question: What is the largest planet in our solar system?
-    correctAnswer: Jupiter
+  - question: "\uFFFDCu\uFFFDl es el planeta m\uFFFDs grande de nuestro sistema solar?"
+    correctAnswer: "J\uFFFDpiter"
     decoyAnswers:
     - Venus
-    - Mars
-    - Saturn
-  - question: What is the chemical symbol for gold?
+    - Marte
+    - Saturno
+  - question: "\uFFFDCu\uFFFDl es el s\uFFFDmbolo qu\uFFFDmico del oro?"
     correctAnswer: Au
     decoyAnswers:
     - Ag
     - Fe
     - Hg
-  - question: Which famous scientist developed the theory of relativity?
+  - question: "\uFFFDQu\uFFFD famoso cient\uFFFDfico desarroll\uFFFD la teor\uFFFDa
+      de la relatividad?"
     correctAnswer: Albert Einstein
     decoyAnswers:
     - Isaac Newton
     - Galileo Galilei
     - Stephen Hawking
-  - question: In what year did the Titanic sink?
+  - question: "\uFFFDEn qu\uFFFD a\uFFFDo se hundi\uFFFD el Titanic?"
     correctAnswer: 1912
     decoyAnswers:
     - 1910
     - 1915
     - 1920
-  - question: What is the capital of Japan?
-    correctAnswer: Tokyo
+  - question: "\uFFFDCu\uFFFDl es la capital de Jap\uFFFDn?"
+    correctAnswer: Tokio
     decoyAnswers:
-    - Seoul
-    - Beijing
+    - "Se\uFFFDl"
+    - "Pek\uFFFDn"
     - Bangkok
-  - question: Who painted the Mona Lisa?
+  - question: "\uFFFDQui\uFFFDn pint\uFFFD la Mona Lisa?"
     correctAnswer: Leonardo da Vinci
     decoyAnswers:
     - Vincent van Gogh
     - Pablo Picasso
-    - Michelangelo
-  - question: What is the largest ocean on Earth?
-    correctAnswer: Pacific Ocean
+    - "Miguel \uFFFDngel"
+  - question: "\uFFFDCu\uFFFDl es el oc\uFFFDano m\uFFFDs grande de la Tierra?"
+    correctAnswer: "Oc\uFFFDano Pac\uFFFDfico"
     decoyAnswers:
-    - Atlantic Ocean
-    - Indian Ocean
-    - Arctic Ocean
-  - question: Which planet is known as the "Red Planet"?
-    correctAnswer: Mars
+    - "Oc\uFFFDano Atl\uFFFDntico"
+    - "Oc\uFFFDano \uFFFDndico"
+    - "Oc\uFFFDano \uFFFDrtico"
+  - question: "\uFFFDQu\uFFFD planeta es conocido como el Planeta Rojo?"
+    correctAnswer: Marte
     decoyAnswers:
     - Venus
-    - Jupiter
-    - Saturn
-  - question: Who is the author of the Harry Potter series?
+    - "J\uFFFDpiter"
+    - Saturno
+  - question: "\uFFFDQui\uFFFDn es el autor de la saga de Harry Potter?"
     correctAnswer: J.K. Rowling
     decoyAnswers:
     - J.R.R. Tolkien
     - George R.R. Martin
     - Suzanne Collins
-  - question: What is the capital of Australia?
+  - question: "\uFFFDCu\uFFFDl es la capital de Australia?"
     correctAnswer: Canberra
     decoyAnswers:
-    - Sydney
+    - "S\uFFFDdney"
     - Melbourne
     - Brisbane
-  - question: Who is the current President of the United States?
+  - question: "\uFFFDQui\uFFFDn es el actual presidente de los Estados Unidos?"
     correctAnswer: Joe Biden
     decoyAnswers:
     - Donald Trump
     - Barack Obama
     - George W. Bush
-  - question: Which element has the chemical symbol "O"?
-    correctAnswer: Oxygen
+  - question: "\uFFFDQu\uFFFD elemento tiene el s\uFFFDmbolo qu\uFFFDmico O?"
+    correctAnswer: "Ox\uFFFDgeno"
     decoyAnswers:
-    - Gold
-    - Iron
-    - Silver
-  - question: What is the currency of China?
+    - Oro
+    - Hierro
+    - Plata
+  - question: "\uFFFDCu\uFFFDl es la moneda de China?"
     correctAnswer: Yuan
     decoyAnswers:
     - Yen
-    - Won
+    - "W\uFFFDn"
     - Ringgit
-  - question: Who wrote the play "Hamlet"?
+  - question: "\uFFFDQui\uFFFDn escribi\uFFFD la obra Hamlet?"
     correctAnswer: William Shakespeare
     decoyAnswers:
     - Jane Austen
     - Charles Dickens
     - F. Scott Fitzgerald
-  - question: In which year did the Berlin Wall fall?
+  - question: "\uFFFDEn qu\uFFFD a\uFFFDo cay\uFFFD el Muro de Berl\uFFFDn?"
     correctAnswer: 1989
     decoyAnswers:
     - 1985
     - 1991
     - 1995
-  - question: What is the largest mammal in the world?
-    correctAnswer: Blue whale
+  - question: "\uFFFDCu\uFFFDl es el mam\uFFFDfero m\uFFFDs grande del mundo?"
+    correctAnswer: Ballena azul
     decoyAnswers:
-    - Elephant
-    - Giraffe
-    - Gorilla
-  - question: Who is known as the "Father of Computers"?
+    - Elefante
+    - Jirafa
+    - Gorila
+  - question: "\uFFFDQui\uFFFDn es conocido como el Padre de la Inform\uFFFDtica?"
     correctAnswer: Alan Turing
     decoyAnswers:
     - Bill Gates
     - Steve Jobs
     - Charles Babbage
-  - question: What is the official language of Brazil?
-    correctAnswer: Portuguese
+  - question: "\uFFFDCu\uFFFDl es el idioma oficial de Brasil?"
+    correctAnswer: "Portugu\uFFFDs"
     decoyAnswers:
-    - Spanish
-    - French
-    - Italian
-  - question: Who painted the Starry Night?
+    - "Espa\uFFFDol"
+    - "Franc\uFFFDs"
+    - Italiano
+  - question: "\uFFFDQui\uFFFDn pint\uFFFD La noche estrellada?"
     correctAnswer: Vincent van Gogh
     decoyAnswers:
     - Claude Monet
     - Pablo Picasso
-    - "Salvador Dal\xED"
-  - question: In which country is the Great Barrier Reef located?
+    - "Salvador Dal\uFFFD"
+  - question: "\uFFFDEn qu\uFFFD pa\uFFFDs se encuentra la Gran Barrera de Coral?"
     correctAnswer: Australia
     decoyAnswers:
-    - Brazil
-    - Mexico
+    - Brasil
+    - "M\uFFFDxico"
     - India
-  - question: What is the smallest prime number?
+  - question: "\uFFFDCu\uFFFDl es el n\uFFFDmero primo m\uFFFDs peque\uFFFDo?"
     correctAnswer: 2
     decoyAnswers:
     - 0
     - 1
     - 3
-  - question: Which planet is known as the "Blue Planet"?
-    correctAnswer: Earth
+  - question: "\uFFFDQu\uFFFD planeta es conocido como el Planeta Azul?"
+    correctAnswer: Tierra
     decoyAnswers:
     - Venus
-    - Mars
-    - Jupiter
-  - question: What is the chemical symbol for silver?
+    - Marte
+    - "J\uFFFDpiter"
+  - question: "\uFFFDCu\uFFFDl es el s\uFFFDmbolo qu\uFFFDmico de la plata?"
     correctAnswer: Ag
     decoyAnswers:
     - Si
     - Au
     - Fe
-  - question: Who wrote the play "Macbeth"?
+  - question: "\uFFFDQui\uFFFDn escribi\uFFFD la obra Macbeth?"
     correctAnswer: William Shakespeare
     decoyAnswers:
     - Jane Austen
     - Charles Dickens
     - F. Scott Fitzgerald
-  - question: In which year did the United States declare its independence?
+  - question: "\uFFFDEn qu\uFFFD a\uFFFDo declar\uFFFD Estados Unidos su independencia?"
     correctAnswer: 1776
     decoyAnswers:
     - 1774
     - 1783
     - 1800
-  - question: What is the largest desert in the world?
-    correctAnswer: Antarctica
+  - question: "\uFFFDCu\uFFFDl es el desierto m\uFFFDs grande del mundo?"
+    correctAnswer: "Ant\uFFFDrtida"
     decoyAnswers:
-    - Sahara Desert
-    - Arabian Desert
-    - Gobi Desert
-  - question: Who is the Greek god of the sea?
-    correctAnswer: Poseidon
+    - Desierto del Sahara
+    - Desierto de Arabia
+    - Desierto del Gobi
+  - question: "\uFFFDQui\uFFFDn es el dios griego del mar?"
+    correctAnswer: "Poseid\uFFFDn"
     decoyAnswers:
     - Zeus
-    - Apollo
+    - Apolo
     - Hermes
-  - question: What is the capital of Canada?
+  - question: "\uFFFDCu\uFFFDl es la capital de Canad\uFFFD?"
     correctAnswer: Ottawa
     decoyAnswers:
     - Toronto
     - Vancouver
     - Montreal
-  - question: Who wrote the novel "To Kill a Mockingbird"?
+  - question: "\uFFFDQui\uFFFDn escribi\uFFFD la novela Matar a un ruise\uFFFDor?"
     correctAnswer: Harper Lee
     decoyAnswers:
     - J.R.R. Tolkien
     - Jane Austen
     - George Orwell
-  - question: What is the square root of 64?
+  - question: "\uFFFDCu\uFFFDl es la ra\uFFFDz cuadrada de 64?"
     correctAnswer: 8
     decoyAnswers:
     - 6
     - 10
     - 12
-  - question: Which planet is known as the "Morning Star" or "Evening Star"?
+  - question: "\uFFFDQu\uFFFD planeta es conocido como la Estrella de la Ma\uFFFDana
+      o la Estrella de la Tarde?"
     correctAnswer: Venus
     decoyAnswers:
-    - Mars
-    - Jupiter
-    - Mercury
-  - question: What is the chemical symbol for water?
+    - Marte
+    - "J\uFFFDpiter"
+    - Mercurio
+  - question: "\uFFFDCu\uFFFDl es la f\uFFFDrmula qu\uFFFDmica del agua?"
     correctAnswer: H2O
     decoyAnswers:
     - CO2
     - O2
     - N2
-  - question: Who painted the Last Supper?
+  - question: "\uFFFDQui\uFFFDn pint\uFFFD La \uFFFDltima cena?"
     correctAnswer: Leonardo da Vinci
     decoyAnswers:
-    - Michelangelo
+    - "Miguel \uFFFDngel"
     - Vincent van Gogh
     - Pablo Picasso
-  - question: In which year did Christopher Columbus first reach the Americas?
+  - question: "\uFFFDEn qu\uFFFD a\uFFFDo lleg\uFFFD Crist\uFFFDbal Col\uFFFDn por
+      primera vez a Am\uFFFDrica?"
     correctAnswer: 1492
     decoyAnswers:
     - 1500
     - 1607
     - 1776
-  - question: What is the largest bird in the world?
-    correctAnswer: Ostrich
+  - question: "\uFFFDCu\uFFFDl es el ave m\uFFFDs grande del mundo?"
+    correctAnswer: Avestruz
     decoyAnswers:
-    - Eagle
-    - Penguin
-    - Falcon
-  - question: Who is the author of "The Great Gatsby"?
+    - "\uFFFDguila"
+    - "Ping\uFFFDino"
+    - "Halc\uFFFDn"
+  - question: "\uFFFDQui\uFFFDn es el autor de El gran Gatsby?"
     correctAnswer: F. Scott Fitzgerald
     decoyAnswers:
     - Ernest Hemingway
     - Jane Austen
     - George Orwell
-  - question: What is the speed of light?
-    correctAnswer: 300,000 km/s
+  - question: "\uFFFDCu\uFFFDl es la velocidad de la luz?"
+    correctAnswer: 300.000 km/s
     decoyAnswers:
-    - 150,000 km/s
-    - 500,000 km/s
-    - 10,000 km/s
-  - question: Which country is known as the Land of the Rising Sun?
-    correctAnswer: Japan
+    - 150.000 km/s
+    - 500.000 km/s
+    - 10.000 km/s
+  - question: "\uFFFDQu\uFFFD pa\uFFFDs es conocido como la Tierra del Sol Naciente?"
+    correctAnswer: "Jap\uFFFDn"
     decoyAnswers:
     - China
-    - South Korea
+    - Corea del Sur
     - Vietnam
-  - question: What is the currency of the United Kingdom?
-    correctAnswer: Pound Sterling
+  - question: "\uFFFDCu\uFFFDl es la moneda oficial del Reino Unido?"
+    correctAnswer: Libra esterlina
     decoyAnswers:
     - Euro
-    - Dollar
+    - "D\uFFFDlar"
     - Yen
-  - question: Who is the lead vocalist of the band Queen?
+  - question: "\uFFFDQui\uFFFDn es el vocalista principal del grupo Queen?"
     correctAnswer: Freddie Mercury
     decoyAnswers:
     - John Lennon
     - Mick Jagger
     - David Bowie
-  - question: In which year did the first moon landing occur?
+  - question: "\uFFFDEn qu\uFFFD a\uFFFDo tuvo lugar el primer alunizaje?"
     correctAnswer: 1969
     decoyAnswers:
     - 1961
     - 1975
     - 1983
-  - question: What is the largest island in the world?
-    correctAnswer: Greenland
+  - question: "\uFFFDCu\uFFFDl es la isla m\uFFFDs grande del mundo?"
+    correctAnswer: Groenlandia
     decoyAnswers:
     - Australia
     - Borneo
     - Madagascar
-  - question: Who painted the Sistine Chapel ceiling?
-    correctAnswer: Michelangelo
+  - question: "\uFFFDQui\uFFFDn pint\uFFFD el techo de la Capilla Sixtina?"
+    correctAnswer: "Miguel \uFFFDngel"
     decoyAnswers:
     - Leonardo da Vinci
-    - Raphael
+    - Rafael
     - Donatello
-  - question: What is the capital of South Africa?
+  - question: "\uFFFDCu\uFFFDl es la capital de Sud\uFFFDfrica?"
     correctAnswer: Pretoria
     decoyAnswers:
     - Nairobi
-    - Cape Town
-    - Johannesburg
-  - question: Who discovered penicillin?
+    - Ciudad del Cabo
+    - Johannesburgo
+  - question: "\uFFFDQui\uFFFDn descubri\uFFFD la penicilina?"
     correctAnswer: Alexander Fleming
     decoyAnswers:
     - Marie Curie
     - Louis Pasteur
     - Joseph Lister
-  - question: What is the largest moon of Jupiter?
-    correctAnswer: Ganymede
+  - question: "\uFFFDCu\uFFFDl es la luna m\uFFFDs grande de J\uFFFDpiter?"
+    correctAnswer: "Gan\uFFFDmedes"
     decoyAnswers:
-    - Io
+    - "\uFFFDo"
     - Europa
-    - Callisto
-  - question: Who wrote the novel "1984"?
+    - Calisto
+  - question: "\uFFFDQui\uFFFDn escribi\uFFFD la novela 1984?"
     correctAnswer: George Orwell
     decoyAnswers:
     - Aldous Huxley
