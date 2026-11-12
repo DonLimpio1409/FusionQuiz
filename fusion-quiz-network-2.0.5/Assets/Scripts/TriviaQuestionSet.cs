@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 /// <summary>
 /// Scriptable object that defines the trivia questions.  Can be defined by a CSV file.
@@ -10,8 +12,8 @@ using UnityEngine;
 [CreateAssetMenu()]
 public class TriviaQuestionSet : ScriptableObject
 {
-	[SerializeField, Tooltip("Comma Separated Values that can be used to create the questions.  Organized as \"Question, Correct Answer, Other Choices\"")]
-	private TextAsset _questionCSV;
+	[SerializeField] private TextAsset _questionCSVEnglish;
+	[SerializeField] private TextAsset _questionCSVSpanish;
 
 	[SerializeField, Tooltip("List of the trivia questions.")]
 	private List<TriviaQuestion> _questions;
@@ -32,14 +34,19 @@ public class TriviaQuestionSet : ScriptableObject
 		public string[] decoyAnswers;
 	}
 
+	public void UpdateQuestions()
+	{
+		CreateQuestions();
+	}
+
 	[ContextMenu("Create Questions")]
 	public void CreateQuestions()
 	{
 		_questions = new List<TriviaQuestion>();
 
-		if (_questionCSV == null)
+		if (_questionCSVEnglish == null || _questionCSVSpanish == null)
 		{
-			Debug.LogWarning("No CSV Assigned.");
+			Debug.LogWarning("CSVs not assigned.");
 			return;
 		}
 
@@ -49,9 +56,14 @@ public class TriviaQuestionSet : ScriptableObject
 
 		List<Dictionary<string, object>> list = new List<Dictionary<string, object>>();
 
-		TextAsset data = _questionCSV;
+		bool spanish = LocalizationSettings.SelectedLocale.Identifier.Code == "es";
+
+		TextAsset data = spanish
+			? _questionCSVSpanish
+			: _questionCSVEnglish;
 
 		var lines = Regex.Split(data.text, LINE_SPLIT_RE);
+		Debug.Log("Líneas encontradas: " + lines.Length);
 
 		if (lines.Length > 1)
 		{
@@ -84,13 +96,18 @@ public class TriviaQuestionSet : ScriptableObject
 			TriviaQuestion question = new TriviaQuestion();
 			List<string> keys = new List<string>(list[i].Keys);
 
-			question.question = list[i][keys[0]] as string;
-			question.correctAnswer = list[i][keys[1]] as string;
+				if (keys.Count < 5)
+				{
+					Debug.LogError("Fila inválida: " + i);
+					continue;
+				}
+				question.question      = list[i][keys[0]] as string;
+				question.correctAnswer = list[i][keys[1]] as string;
 
-			question.decoyAnswers = new string[3];
-			question.decoyAnswers[0] = list[i][keys[2]] as string;
-			question.decoyAnswers[1] = list[i][keys[3]] as string;
-			question.decoyAnswers[2] = list[i][keys[4]] as string;
+				question.decoyAnswers = new string[3];
+				question.decoyAnswers[0] = list[i][keys[2]] as string;
+				question.decoyAnswers[1] = list[i][keys[3]] as string;
+				question.decoyAnswers[2] = list[i][keys[4]] as string;
 
 			_questions.Add(question);
         }

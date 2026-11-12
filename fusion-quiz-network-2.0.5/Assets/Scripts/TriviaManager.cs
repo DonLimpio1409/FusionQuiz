@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
+
 
 /// <summary>
 /// Singleton network behavoir that manages the game and is managed by the shared mode master client.
@@ -161,6 +164,17 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
         UpdateQuestionsAskedText();
     }
 
+    public void SetTriviaMessage(string key)
+    {
+        var localizedString = new LocalizedString("UI", key);
+
+        var operation = localizedString.GetLocalizedStringAsync();
+
+        operation.Completed += handle =>
+        {
+            triviaMessage.text = handle.Result;
+        };
+    }
     /// <summary>
     /// Shuffles the questions around.
     /// </summary>
@@ -321,7 +335,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
 
             TriviaPlayer.LocalPlayer.Expression = TriviaPlayer.AvatarExpressions.Neutral;
 
-            triviaMessage.text = GameState == TriviaGameState.Intro ? "Select The Correct Answer\nStarting Game Soon" : "New Game Starting Soon!";
+            SetTriviaMessage("text_PregameExplication");
 
             endGameObject.Hide();
         }
@@ -356,6 +370,7 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
     {
         // Hides the question elements and then shows the game elements / final score / winner elements
         questionElements.SetActive(false);
+        triviaMessage.gameObject.SetActive(false);
 
         // Removes the correct answer highlight
         for (int i = 0; i < answers.Length; i++)
@@ -374,11 +389,11 @@ public class TriviaManager : NetworkBehaviour, IStateAuthorityChanged
 
         if (winners.Count == 0)
         {
-            triviaMessage.text = "No winners";
+            SetTriviaMessage("text_PregameNowiners");
         }
         else
         {
-            triviaMessage.text = winners[0].PlayerName.Value + " Wins!";
+            SetTriviaMessage("text_PregameWins");
         }
 
         // Sets the player expression based on who won.

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI
+  m_TableCollectionNameGuidString: eb648ac1e2d63c44087f8434ca63097b
+  m_Entries:
+  - m_Id: 895760318464
+    m_Key: text_MainTilte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9461036597248
+    m_Key: text_PlayerName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9597313728512
+    m_Key: text_RoomName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9702871777280
+    m_Key: button_JoinRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9865426223104
+    m_Key: button_CreateRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10027296997376
+    m_Key: text_PlaceHolderName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10270528880640
+    m_Key: text_PlaceHolderRoom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10704098279424
+    m_Key: button_Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16332686475264
+    m_Key: text_PregameIntro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20736684703744
+    m_Key: text_PregameExplication
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21101501071360
+    m_Key: text_PregameNowiners
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21289133260800
+    m_Key: text_PregameWins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68520259469312
+    m_Key: 'button_Spanish
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 68592783179776
+    m_Key: button_English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 71455068504064
+    m_Key: text_Explication1
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8366017117526949912
+  references:
+    version: 2
+    RefIds:
+    - rid: 8366017117526949912
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1794425927838
